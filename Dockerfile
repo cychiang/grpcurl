@@ -1,4 +1,4 @@
-FROM golang:1.9-alpine as builder
+FROM golang:1.10.3-alpine3.7 as builder
 RUN apk add --no-cache git gcc make musl-dev bash
 
 ENV PROJ github.com/networld-to/grpcurl
